@@ -1,7 +1,6 @@
 // here i will learn all about javaScript function
 
 /****************************
-                    // funcion overview
  * javaScript ekta functional programming la nguagae.
  
  * function dynamicallly kaj korte pare. jemon ekhane nicher udhahoron a "name" & "time" holo dynamic. etate jekno value use kora jabe. jeta onno vabe kora jeto na.
@@ -32,16 +31,19 @@
 // ar argumetns holo function call korar somoy, () ei bracket er moddhe jeta dewa hoy, jeta ke value o bola jay.
 
 //return.
-// return ekta keyword jeta function a use kora hoy. ar ei return keyword ta jokhon use kora hobe, tokhon function ta kaj kora bondho kore dibe. return er nicher line a jodi kichu code o lekha thake, tahole seta print hobe na. ba oi code ta kaj o korbe na. amra chaile kono functiona  return use na korlew pari. eteo kono somossa hobe na. kintu return use na korle, setar default return thake undefinde. tobe use korle, ekdom sobar seshe use korbo. jemon ekhane "return" er pore ekta console.log kora hoyece. kintu seta browser a print hoyni. karon return er pore kichu thakle seta ar print hoyna.
+// return ekta keyword jeta function a use kora hoy. ar ei return keyword ta jokhon use kora hobe, tokhon function ta kaj kora bondho kore dibe. return er nicher line a jodi kichu code o lekha thake, tahole seta print hobe na. ba oi code ta kaj o korbe na. amra chaile kono function a return use na korlew pari. eteo kono somossa hobe na. kintu return use na korle, setar default return thake undefinde. tobe use korle, ekdom sobar seshe use korbo. jemon ekhane "return" er pore ekta console.log kora hoyece. kintu seta browser a print hoyni. karon return er pore kichu thakle seta ar print hoyna.
 
-// function returnFunc() {
+// 1. function returnFunc() {
 //   console.log("amr sonar bangla");
 //   return;
 //   console.log("raihan");
 // }
 // returnFunc();
 
-// function store in variable.
+
+
+
+// 2. function store in variable.
 // function inVarFunc(a, b) {
 //   return a * b;
 // }
@@ -49,9 +51,12 @@
 // let inVarOutput = inVarFunc(4, 5);
 // console.log(inVarOutput);
 
-// using variable as a return
 
-/**
+
+
+
+/** 3. using variable as a return
+
  function varReturnFunc(a , b){
   var sum = a + b;
   return sum;
@@ -63,14 +68,19 @@ let totalNum = varReturnFunc(oneNum, twoNum)
 console.log(totalNum);
  */
 
-// problem solving one. avarges of three numbers
+
+
+// 4. problem solving one. avarges of three numbers
 // function make_avg(a,b,c){
 //   var sum = a + b + c;
 //   let avarage = sum / make_avg.length;
 //   return avarage;
 // }
+// make_avg(5,4,3)
 
-// problem : make a function which return all number addition in array's
+
+
+// 5. problem : make a function which return all number addition in array's
 // let allNumerInArray = [23, 42, 53, 25];
 // function arrayFunction(total, value) {
 //   return total + value;
@@ -79,7 +89,11 @@ console.log(totalNum);
 // let storeAllValue = allNumerInArray.reduce(arrayFunction);
 // console.log(storeAllValue);
 
-// same problem solivng without reduce() method, using loop.
+
+
+
+
+// 5.0 same problem solivng without reduce() method, using loop.
 
 // function sumOfArray(arrayReciver) {
 //   let increaseArray = 0;
@@ -95,7 +109,12 @@ console.log(totalNum);
 // let callFunction = sumOfArray(numberOfArray);
 // console.log(callFunction);
 
-// write a function called odd_even() which takes and integer value and tells wheather this value is even or odd. you need to do it in 4 ways.
+
+
+
+
+
+// 6. write a function called odd_even() which takes and integer value and tells wheather this value is even or odd.
 
 // function odd_even(getArgument) {
 //   if (getArgument % 2 == 0) {
@@ -121,26 +140,53 @@ console.log(totalNum);
 // }
 // checking();
 
-// print out all odd number using function.
 
-function oddNumber(oddArray) {
-  let makeOddArray = [];
 
-  for (let i = 0; i < oddArray.length; i++) {
-    let allArrayLoopingNumber = oddArray[i];
-    if (allArrayLoopingNumber % 2 != 0) {
+
+// 7. print out all odd number using function.
+
+// function oddNumber(oddArray) {
+//   let makeOddArray = [];
+
+//   for (let i = 0; i < oddArray.length; i++) {
+//     let allArrayLoopingNumber = oddArray[i];
+//     if (allArrayLoopingNumber % 2 != 0) {
       // console.log(allArrayLoopingNumber);
-      makeOddArray.push(allArrayLoopingNumber);
-    }
-  }
+//       makeOddArray.push(allArrayLoopingNumber);
+//     }
+//   }
 
-  let sumOddArray = 0;
-  for (let i = 0; i < makeOddArray.length; i++) {
-    let newOddNumbersArray = makeOddArray[i];
-    sumOddArray += newOddNumbersArray;
-  }
-  return sumOddArray;
-}
-let allNumbers = [22, 32, 53, 64, 67];
-let callOddFunction = oddNumber(allNumbers);
-console.log(callOddFunction);
+//   let sumOddArray = 0;
+//   for (let i = 0; i < makeOddArray.length; i++) {
+//     let newOddNumbersArray = makeOddArray[i];
+//     sumOddArray += newOddNumbersArray;
+//   }
+//   return sumOddArray;
+// }
+// let allNumbers = [22, 32, 53, 64, 67];
+// let callOddFunction = oddNumber(allNumbers);
+// console.log(callOddFunction);
+
+
+
+
+
+
+// make a factorial numebr from 0 to 10
+
+// function factorial(factorialNumber) {
+//   let factorialOutput = 1;
+//   for (let i = 1; i <= factorialNumber; i++) {
+//     let factorialAns = i;
+//     factorialOutput = factorialOutput * factorialAns;
+//     console.log("factorial of", i, ":", factorialOutput);
+//   }
+//   return factorialOutput;
+// }
+
+// let factorialValueOutput = factorial(10);
+// console.log(factorialValueOutput);
+
+// for (let i = 10; i> 10; i--) {
+//   console.log(i);
+// }

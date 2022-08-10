@@ -1,44 +1,55 @@
-// array
+// her i will learn all about array
 
-// var manName = ["ojufa", "raihan", "ruhan", "snigdha"];
-// var girlName = ["rima", "snigdha", "jalajontrona"];
 
-// arra concatination
+
+var manName = ["ojufa", "raihan", "ruhan", "snigdha"];
+var girlName = ["rima", "snigdha", "jalajontrona"];
+
+// 1. arra concatination
 // var arrOutPut = manName.concat(girlName);
 // console.log(arrOutPut);
 
-// change the arary value
-// oneNameMan = manName[1];
+
+
+// 2. change the arary value
 // manName[1] = "Abu Raihan";
 // manName[2] = "mizan";
+// console.log(manName);
 
-// delete array index using delete
+
+
+// 3. delete array index using delete
 // delete manName[0];
 
-// kono array'r sorbosesh element ke change korar jonno use korte hobe...
+
+
+// 4. kono array'r sorbosesh element ke change korar jonno use korte hobe...
 // Array.length -1
 // example :
 
-// var newArray = ["amar", "sonar", "bangla"];
-// newArray[3] = "add new";
-// newArray[4] = "add new 4 ";
-// newArray[5] = "add new 5 ";
-// newArray[6] = "add new 6";
-// newArray[7] = "add new 7";
-// var addNewArrayAtLast = newArray[newArray.length - 1];
+var newArray = ["amar", "sonar", "bangla"];
+newArray[3] = "add new";
+newArray[4] = "add new 4 ";
+newArray[5] = "add new 5 ";
+var addNewArrayAtLast = newArray[newArray.length - 1];
 // console.log(addNewArrayAtLast);
 
-// loop in Array
+
+
+
+// 5. loop in Array
 
 // for (i = 0; i < newArray.length; i++) {
 //   console.log(newArray[i]);
 // }
-
+ 
 // function myFunction(value) {
 //   console.log(value);
 // }
 
 // newArray.forEach(myFunction);
+
+
 
 // array'r data type check korte gele dekhabe eta ekta object. thaole amra kivabe bujhbo je, eta array kingba object?
 
@@ -51,39 +62,59 @@
 
 // instanceof object er khetrew use kora jay. jodi object hoy, tahole return korbe true, jodi object na hoy tahole return korbe false.
 
+
+
+
+
+
 // Array Method in Array
 
-// toString();
+//1. toString();
 //kono array ke string a convert kore.
 
-// push("this item will be add last");
+
+// 2. push("this item will be add last");
 //kono array er last a item add korte hole
 
-// pop();
+
+// 3. pop();
 // kono array'r last er item delete korte hole pop() use korte hobe.
 
-// shift();
+
+// 4. shift();
 //shift ar kichui na. pop er biporit. pop kono array'r last er element    delete kore. ar shift kono array'r first element delete kroe.
 
-// unshift("add item first")
+
+// 4. unshift("add item first")
 // unshift reverse of shift. eta kono array'r first a elemnt add korbe.
 
-// length;
+
+// 5. length;
 //kono array te koto gulo item ache seta dekhabe.
 
-// concat()
+
+// 6. concat()
 // ek arrayr sathe arek array add kore. jemon...
 // var arr1 = [1,2,3];
 // var arr2 = [4,5,6];
 // console.log(arr1.concat(arr2)); // output 1,2,3,4,5,6
 
-// join( " ")
+// 7. join( " ")
 //join method kono array ke string korbe. and join er parameter hisebe ja dewa hobe, prottekta array element er sesh oita add kore dibe.
 
-// splice(2, 0, "item1", "item2")
+let joinTest = ['beauty', 'of', 'bangladesh'];
+let joinOutput = joinTest.join(',');
+// console.log(joinOutput);
+
+
+//  8. splice(2, 0, "item1", "item2")
 // splice kono array te jekhane iccha sekhane item add kore.  er value thake prothom 2 ta. prothom 2 ta valuer proothom ta holo, koto number index a element add hobe. ar 2nd value holo koyta item remove korbe. jemon ekhane 2,0 use kora hoise. ekhane 2 mane holo 2nd tomo index a item add hobe. ar 0 mane holo tumi 0 ta element remove koro. 0 elemnt remove korar mane holo, kono elemnt e jaate remove na hoy. er pore ki ki elemnts hobe ta likhe dewa.
 
-// slice()
+let spliceMethod = ['ore', 'nil','doriya'];
+let spliceOutput = spliceMethod.splice(6,0)
+// console.log(spliceOutput.splice(5,0));
+
+// 9.  slice()
 // sleice and splice are same jinis. splice elemnt add kore. ar slice delte kore. functionallity ek e.
 
 // var myArr = ['ami','tumi','amra','sobai','ekhane'];
@@ -93,21 +124,23 @@
 
 // sorting array
 
-// sort()
+// 10. sort()
 // kono array'r er string gulake alphabatticaly sort korbe, a er pore b, b er pore c, c er pore d. eirokom. number o kore, kintu seta problemitacit.
 
-// kono array er number gulo ke serial e sajanor jonno ei function use kora hoy
+
+
+// 11. kono array er number gulo ke serial e sajanor jonno ei function use kora hoy
 // var myArr = [4, 3, 12, 32, 100, 32, 98];
 // console.log(myArr[0]);
-// var getOut = myArr.sort(function (b, a) {
-//   return b  - a;
+// var getOut = myArr.sort(function (a, b) {
+//   return a  - b;
 // });
 // console.log(getOut);
 
-// math.max()
+// 12. math.max()
 // kono array'r sobcheye boro number ta ber korar jonno eta use kora hoy.
 
-// math.min()
+// 13. math.min()
 // kono array'r sorbonimno number ber korar jonno eta use kora hoy.
 
 // -------------------------------------------
